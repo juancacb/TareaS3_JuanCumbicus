@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TareaS3_JuanCumbicus.registro">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+                <Label Text="PROYECTO DE DESARROLLO DE SISTEMAS MÓVILES" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+            </Frame>
+            <Label x:Name="lbUsuario" HorizontalTextAlignment="End" FontSize="16"/>
+            <Label Text="NOTAS PARCIAL 1" HorizontalTextAlignment="Center" TextColor="Red"/>
+            <Entry x:Name="txtNotaUno" Placeholder="Ingrese la Nota de Seguimiento" Keyboard="Numeric" TextChanged="txtNotaUno_TextChanged"/>
+            <Entry x:Name="txtNotaDos" Placeholder="Ingrese la Nota del Examen" Keyboard="Numeric"/>
+            <Entry x:Name="txtParcialUno" Placeholder="RESULTADOP1" IsReadOnly="True"/>
+
+
+            <Label Text="NOTAS PARCIAL 2" HorizontalTextAlignment="Center" TextColor="Red"/>
+            <Entry x:Name="txtNotaCuatro" Placeholder="Ingrese la Nota de Seguimiento" Keyboard="Numeric"/>
+            <Entry x:Name="txtNotaCinco" Placeholder="Ingrese la Nota del Examen" Keyboard="Numeric"/>
+            <Entry x:Name="txtParcialDos" Placeholder="RESULTADOP2" IsReadOnly="True"/>
+
+            <Label Text="Estado" FontSize="18" TextColor="Blue" HorizontalTextAlignment="Center"/>
+            <Entry x:Name="txtEstado" Placeholder="Estado" IsReadOnly="True" Keyboard="Numeric"/>
+            <Entry x:Name="txtNota" Placeholder="Nota final" IsReadOnly="True" Keyboard="Numeric"/>
+
+
+            <Entry x:Name="txtnf" Placeholder="NOTAFINAL" IsReadOnly="True"/>
+            <Button x:Name="btnCalcularNF" Text="CalcularNF" Clicked="btnCalcularNF_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
